@@ -29,6 +29,6 @@ void rev_string(char *s)
 
 		/*  move pointers*/
 		start++;
-		end--;	
+		end--;
 	}
 }
