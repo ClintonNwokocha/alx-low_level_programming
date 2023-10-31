@@ -1,0 +1,4 @@
+rgs.c:11: ERROR: spaces required around that '=' (ctx:VxV)
+total: 1 errors, 1 warnings, 16 lines checked
+2-args.c:3: warning: missing initial short description
+2-args.c:8: warning: No description found for return value of 'main'
