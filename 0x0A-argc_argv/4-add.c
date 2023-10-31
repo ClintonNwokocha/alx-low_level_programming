@@ -5,7 +5,7 @@
  * main - adds positive numbers
  * @argc: argument count.
  * @argv: argument vector.
- * Return: (1) if not successful, (0) if successful
+ * Return: (1) if an argument contains non-digits, (0) otherwise
  */
 int main(int argc, char **argv)
 {
@@ -18,7 +18,7 @@ int main(int argc, char **argv)
 		{
 			if (!isdigit(argv[i][j]))
 			{
-				printf("Error");
+				printf("Error\n");
 				return (1);
 			}
 		}
