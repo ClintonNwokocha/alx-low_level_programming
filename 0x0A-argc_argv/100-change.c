@@ -10,7 +10,7 @@ int main(int argc, char **argv)
 {
 	int cents;
 	int coins;
-	int denominations[] = {25, 10, 5, 2, 1}; 
+	int denominations[] = {25, 10, 5, 2, 1};
 	int size;
 	int i;
 
