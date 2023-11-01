@@ -24,13 +24,14 @@ int main(int argc, char **argv)
 	if (cents < 0)
 	{
 		printf("0\n");
+		return (0);
 	}
 	coins = 0;
 	size = sizeof(denominations) / sizeof(denominations[0]);
 
 	for (i = 0; i < size; i++)
 	{
-		if (cents >= denominations[i])
+		while (cents >= denominations[i])
 		{
 			cents -= denominations[i];
 			coins++;
