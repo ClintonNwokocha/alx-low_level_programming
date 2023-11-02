@@ -1,1 +1,1 @@
-0x04. C - More functions, more nested loops
+This repository contains programs written for the low-level programming and algorithm track in the ALX Software Engineering Programc cohort 20. In these projects I learned about data structures, algorithms, and other low-level programming concepts while working in the C programming language
