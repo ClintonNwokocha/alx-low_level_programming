@@ -1,29 +1,31 @@
 #include "main.h"
-
 /**
- * _strncpy - copy a string
- * @dest: input value
- * @src: input value
- * @n: input value
- *
- * Return: dest
+ * _strspn - Entry point
+ * @s: input
+ * Aaccept: input
+ * Return: Always 0 (Success)
  */
-char *_strncpy(char *dest, char *src, int n)
+
+unsigned int _strspn(char *s, char *accept)
 {
-	int j;
+	unsigned int n = 0;
+	int r;
 
-	j = 0;
-	while (j < n && src[j] != '\0')
+	while (*s)
 	{
-		dest[j] = src[j];
-		j++;
-	}
-	while (j < n)
-	{
-		dest[j] = '\0';
-		j++;
+		for (r = 0; accept[r]; r++)
+		{
+			if (*s == accept[r])
+			{
+				n++;
+				break;
+			}
+			else if (accept[r +1] == '\0')
+				return (n);
+		}
+
+		s++;
 	}
 
-	return (dest);
+	return (n);
 }
-
